@@ -23,7 +23,7 @@ except Exception as e:
 ```
 There are two major steps which is done in oreder to detect and solve the equations from the worksheet.
  **Workspace detection** is used to identify correctly the suitable space from the worsheet where equations are solved by a particular person. Output received from this section:
-	![Workspce Detection](https://drive.google.com/file/d/1-QNiH4N5giLBKocSwK-itNH9ZxAI8Ljw/view?usp=sharing) 
+	![Workspce Detection](https://drive.google.com/file/d/1-QNiH4N5giLBKocSwK-itNH9ZxAI8Ljw) 
 
   **Analysis module** will first detect the lines, predict the characters in each line and finally forms an equation with the predicted 
 characters then evaluate them by marking boxes. Each detected line is evaluated.
