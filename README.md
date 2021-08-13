@@ -45,8 +45,7 @@ characters then evaluate them by marking boxes. Each detected line is evaluated.
 2. Red Box represents that equation in that particular line is solved incorrectly.
 
 	![Evaluation](project_images/evaluation.jpg) 
-
-For detailed description on the workflow see [Report.pdf](Report.pdf)
+Project report can be found here: [report](report/abhishek_report.pdf)
 
 ## Important dependencies to install before running the code.
 
