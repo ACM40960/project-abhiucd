@@ -6,14 +6,14 @@ digitize the steps of solving them and then evaluate them to provide feedback.
 
 ![Project Outline](project_images/project%20modules.PNG)
   
-Steps of Running the Code:
+**_Steps of running the code*_*:
 + mnist_data_conversion_images.ipynb loads the MNIST data from [MNIST](http://yann.lecun.com/exdb/mnist), converts it in image form and stores in different folders as per the classes.
 + Data Preprocessing of kaggle's symbol image has been already done in Preprocessing_Kaggle's_Symbol_For_Training_Neural_Network.ipynb file, and DCCNN neural network model has been trained on 15 classes of images.
 + Pre-processed and cleaned data used for model training can be downloded from [Data](https://drive.google.com/drive/folders/1-UiDxvAquxTKc4LPGOwCdE4zH0QcCL52?usp=sharing)
 Weight and parameters after model training and testing have been saved into DCNN.h5 file.
 + Next check the final.ipynb file to test the algorithm on a worksheet. Steps to run the code is given below.
 
-  **Load model** 
+  **_Load model_** 
 	Change the path where DCNN.h5 is saved in you system after downloding the files from git.
 ```
 try:
@@ -23,9 +23,9 @@ except Exception as e:
     print('Model couldnot be loaded',e)
 ```
 There are two major steps which is done in order to detect and solve the equations from the worksheet.\
- **Workspace detection** is used to identify correctly the suitable space from the worsheet where equations are solved by a particular person. Output received from this section:\
+ **_Workspace detection_** is used to identify correctly the suitable space from the worsheet where equations are solved by a particular person. Output received from this section:\
  
- **Load a worksheet** for testing from the directory by changing the path in follwing code:
+ **_Load a worksheet_** for testing from the directory by changing the path in follwing code:
  
  ```
 image_path = "C:/Users/Abhishek/Desktop/final_project/Autograding-handwritten-mathematical-worksheets-master/data/image_8.jpg"
@@ -40,7 +40,7 @@ plt.imshow(img)
 ```
 	![Workspce Detection](project_images/ExtractionWorkspaces.PNG) 
 
-  **Analysis module** will first detect the lines, predict the characters in each line and finally forms an equation with the predicted 
+  **_Analysis module_** will first detect the lines, predict the characters in each line and finally forms an equation with the predicted 
 characters then evaluate them by marking boxes. Each detected line is evaluated.
 1. Green Box represents that equation in that particular line is solved correctly.
 2. Red Box represents that equation in that particular line is solved incorrectly.
