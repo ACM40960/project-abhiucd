@@ -1,6 +1,6 @@
 # Handwritten Equation Detection and Evaluation
 The  project  is  aimed  at  building  an  AI  system  based on Deep learning model (DCCNN) to identify handwritten mathematical equations from a sheet of paper,
-digitizes the steps of solving them and then evaluate's them to provide feedback.
+digitize the steps of solving them and then evaluate them to provide feedback.
 
 ## Project Outline
 
@@ -48,7 +48,7 @@ characters then evaluate them by marking boxes. Each detected line is evaluated.
 	![Evaluation](project_images/evaluation.jpg) 
 	
  **Conclusion :**
- The system  first took scanned worksheets with handwritten equations and sent it to the work-space detection module, where all the different possible rectangular work-spaces where detected. These detected work-spaces are then fed into the line extraction module, where each individual line from each of the work-space is detected and sent to next module for character segmentation. Here each character from the line is extracted and predicted using the Deep Columnar Neural Network(DCCNN) model.In the final stage the evaluation system will calculate the each line and then draw boxes around the line in green/red colour to indicate whether the solution provided is correct or not. :
+ The system  first took scanned worksheet with handwritten equations and sent it to the work-space detection module, where all the different possible rectangular work-spaces where detected. These detected work-spaces are then fed into the line extraction module, where each individual line from each of the work-space is detected and sent to next module for character segmentation. Here each character from the line is extracted and predicted using the Deep Columnar Neural Network(DCCNN) model. In the final stage the evaluation system will evalaute each line and then draw boxes around the line in green/red colour to indicate whether the solution provided is correct or not.
  
 Project report can be found here: [report](report/abhishek_report.pdf)
 
