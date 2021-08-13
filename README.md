@@ -8,7 +8,7 @@ digitizes the steps of solving them and the evaluate to provide feedback.
   
 Steps of Running the Code:
 + mnist_data_conversion_images.ipynb loads the MNIST data from [MNIST](http://yann.lecun.com/exdb/mnist), converts it in image form and stores in different folders as per the classes.
-+ Data Preprocessing of kaggle's symbol image has been already done in Preprocessing_Kaggle's_Symbol_For_Training_Neural_Network.ipynb file, and DCCNN neural network model has been trained for on 15 classes of images.
++ Data Preprocessing of kaggle's symbol image has been already done in Preprocessing_Kaggle's_Symbol_For_Training_Neural_Network.ipynb file, and DCCNN neural network model has been trained on 15 classes of images.
 + Pre-processed and cleaned data used for model training can be downloded from [Data](https://drive.google.com/drive/folders/1-UiDxvAquxTKc4LPGOwCdE4zH0QcCL52?usp=sharing)
 Weight and parameters after model training and testing have been saved into DCNN.h5 file.
 + Next Check the final.ipynb file. Steps to run is given below.
@@ -46,6 +46,10 @@ characters then evaluate them by marking boxes. Each detected line is evaluated.
 2. Red Box represents that equation in that particular line is solved incorrectly.
 
 	![Evaluation](project_images/evaluation.jpg) 
+	
+ **Conclusion :**
+ The system  first took scanned worksheets with handwritten equations and sent it to the work-space detection module, where all the different possible rectangular work-spaces where detected. These detected work-spaces are then fed into the line extraction module, where each individual line from each of the work-space is detected and sent to next module for character segmentation. Here each character from the line is extracted and predicted using the Deep Columnar Neural Network(DCCNN) model.In the final stage the evaluation system will calculate the each line and then draw boxes around the line in green/red colour to indicate whether the solution provided is correct or not. :
+ 
 Project report can be found here: [report](report/abhishek_report.pdf)
 
 ## Important dependencies to install before running the code.
