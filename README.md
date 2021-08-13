@@ -1,6 +1,6 @@
 # Handwritten Equation Detection and Evaluation
-The  project  is  aimed  at  building  an  AI  system  based on Deep learning model (DCCNN) to identify handwritten mathematical equationsfrom a sheet of paper,
-digitizes the steps of solving them and the evaluate to provide feedback.
+The  project  is  aimed  at  building  an  AI  system  based on Deep learning model (DCCNN) to identify handwritten mathematical equations from a sheet of paper,
+digitizes the steps of solving them and then evaluate's them to provide feedback.
 
 ## Project Outline
 
@@ -11,7 +11,7 @@ Steps of Running the Code:
 + Data Preprocessing of kaggle's symbol image has been already done in Preprocessing_Kaggle's_Symbol_For_Training_Neural_Network.ipynb file, and DCCNN neural network model has been trained on 15 classes of images.
 + Pre-processed and cleaned data used for model training can be downloded from [Data](https://drive.google.com/drive/folders/1-UiDxvAquxTKc4LPGOwCdE4zH0QcCL52?usp=sharing)
 Weight and parameters after model training and testing have been saved into DCNN.h5 file.
-+ Next Check the final.ipynb file. Steps to run is given below.
++ Next check the final.ipynb file to test the algorithm on a worksheet. Steps to run the code is given below.
 
   **Load model** 
 	Change the path where DCNN.h5 is saved in you system after downloding the files from git.
@@ -22,7 +22,7 @@ try:
 except Exception as e:
     print('Model couldnot be loaded',e)
 ```
-There are two major steps which is done in oreder to detect and solve the equations from the worksheet.\
+There are two major steps which is done in order to detect and solve the equations from the worksheet.\
  **Workspace detection** is used to identify correctly the suitable space from the worsheet where equations are solved by a particular person. Output received from this section:\
  
  **Load a worksheet** for testing from the directory by changing the path in follwing code:
@@ -58,7 +58,7 @@ Project report can be found here: [report](report/abhishek_report.pdf)
 	+ Keras (2.3.1)
 	+ Keras-Applications (1.0.8)
 	+ Keras-Preprocessing (1.1.0)
-	+  matplotlib (3.1.1)
+	+ matplotlib (3.1.1)
 	+ numpy (1.17.3)
 	+ opencv-python (4.1.1.26)
 	+ pandas (0.24.0)
