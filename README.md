@@ -5,6 +5,10 @@ digitize the steps of solving them and then evaluate them to provide feedback.
 ## Project Outline
 
 ![Project Outline](project_images/project%20modules.PNG)
+
+## Building Blocks of the Algorithm
+
+![Project Outline](project_images/FunctionalBlock.PNG)
   
 **_Steps of running the code*_*:
 + mnist_data_conversion_images.ipynb loads the MNIST data from [MNIST](http://yann.lecun.com/exdb/mnist), converts it in image form and stores in different folders as per the classes.
