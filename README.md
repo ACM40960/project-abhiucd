@@ -26,9 +26,7 @@ try:
 except Exception as e:
     print('Model couldnot be loaded',e)
 ```
-There are two major steps which is done in order to detect and solve the equations from the worksheet.\
- **_Workspace detection_** is used to identify correctly the suitable space from the worsheet where equations are solved by a particular person. Output received from this section:\
- 
+
  **_Load a worksheet_** for testing from the worksheets directory by changing the path in follwing code:
  
  ```
@@ -42,9 +40,14 @@ img = cv2.imread(image_path)
 plt.figure(figsize=(10,10))
 plt.imshow(img)
 ```
-	![Workspce Detection](project_images/ExtractionWorkspaces.PNG) 
 
-  **_Analysis module_** will first detect the lines, predict the characters in each line and finally forms an equation with the predicted 
+There are two major steps which is done in order to detect and solve the equations from the worksheet.\
+ **1 . _Workspace detection_** is used to identify correctly the suitable space from the worsheet where equations are solved by a particular person.
+ 
+
+![Workspce Detection](project_images/ExtractionWorkspaces.PNG) 
+
+  **2. _Analysis module_** will first detect the lines, predict the characters in each line and finally forms an equation with the predicted 
 characters then evaluate them by marking boxes. Each detected line is evaluated.
 1. Green Box represents that equation in that particular line is solved correctly.
 2. Red Box represents that equation in that particular line is solved incorrectly.
