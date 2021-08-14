@@ -1,4 +1,4 @@
-# Equation Detection and Evaluation
+# Mathematical Equation Detection and Evaluation
 The  project  is  aimed  at  building  an  AI  system  based on Deep learning model (DCCNN) to identify handwritten mathematical equations from a sheet of paper,
 digitize the steps of solving them and then evaluate them to provide feedback.
 
