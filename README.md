@@ -14,7 +14,7 @@ digitize the steps of solving them and then evaluate them to provide feedback.
 + mnist_data_conversion_images.ipynb loads the MNIST data from [MNIST](http://yann.lecun.com/exdb/mnist), converts it in image form and stores in different folders as per the classes.
 + Data Preprocessing of kaggle's symbol image has been already done in Preprocessing_Kaggle's_Symbol_For_Training_Neural_Network.ipynb file, and DCCNN neural network model has been trained on 15 classes of images.
 + Pre-processed and cleaned data used for model training can be downloded from [Data](https://drive.google.com/drive/folders/1-UiDxvAquxTKc4LPGOwCdE4zH0QcCL52?usp=sharing)
-Weight and parameters after model training and testing have been saved into DCNN.h5 file.
++ Weight and parameters after model training and testing have been saved into DCNN.h5 file and can be directly loaded to use the model for prediction of images.
 + Next check the final.ipynb file to test the algorithm on a worksheet. Steps to run the code is given below.
 
   **_Load model_** 
