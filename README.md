@@ -10,7 +10,7 @@ digitize the steps of solving them and then evaluate them to provide feedback.
 
 ![Project Outline](project_images/FunctionalBlock.PNG)
   
-**_Steps of running the code*_*:
+**_Steps of running the code_**:
 + mnist_data_conversion_images.ipynb loads the MNIST data from [MNIST](http://yann.lecun.com/exdb/mnist), converts it in image form and stores in different folders as per the classes.
 + Data Preprocessing of kaggle's symbol image has been already done in Preprocessing_Kaggle's_Symbol_For_Training_Neural_Network.ipynb file, and DCCNN neural network model has been trained on 15 classes of images.
 + Pre-processed and cleaned data used for model training can be downloded from [Data](https://drive.google.com/drive/folders/1-UiDxvAquxTKc4LPGOwCdE4zH0QcCL52?usp=sharing)
@@ -29,7 +29,7 @@ except Exception as e:
 There are two major steps which is done in order to detect and solve the equations from the worksheet.\
  **_Workspace detection_** is used to identify correctly the suitable space from the worsheet where equations are solved by a particular person. Output received from this section:\
  
- **_Load a worksheet_** for testing from the directory by changing the path in follwing code:
+ **_Load a worksheet_** for testing from the worksheets directory by changing the path in follwing code:
  
  ```
 image_path = "C:/Users/Abhishek/Desktop/final_project/Autograding-handwritten-mathematical-worksheets-master/data/image_8.jpg"
