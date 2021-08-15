@@ -49,12 +49,12 @@ There are two major steps which is done in order to detect and solve the equatio
 
   **2. _Analysis module_** will first detect the lines, predict the characters in each line and finally forms an equation with the predicted 
 characters then evaluate them by marking boxes. Each detected line is evaluated.
+
+![Line Detection and Character Prediction](project_images/LineDetectionAndPrediction.PNG) 
+![Evaluation](project_images/evaluation.jpg) 
+	
 1. Green Box represents that equation in that particular line is solved correctly.
 2. Red Box represents that equation in that particular line is solved incorrectly.
-	
-	![Line Detection and Character Prediction](project_images/LineDetectionAndPrediction.jpg) 
-	![Evaluation](project_images/evaluation.jpg) 
-	
  **Conclusion :**
  The system  first took scanned worksheet with handwritten equations and sent it to the work-space detection module, where all the different possible rectangular work-spaces where detected. These detected work-spaces are then fed into the line extraction module, where each individual line from each of the work-space is detected and sent to next module for character segmentation. Here each character from the line is extracted and predicted using the Deep Columnar Neural Network(DCCNN) model. In the final stage the evaluation system will evalaute each line and then draw boxes around the line in green/red colour to indicate whether the solution provided is correct or not.
  
