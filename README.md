@@ -51,7 +51,8 @@ There are two major steps which is done in order to detect and solve the equatio
 characters then evaluate them by marking boxes. Each detected line is evaluated.
 1. Green Box represents that equation in that particular line is solved correctly.
 2. Red Box represents that equation in that particular line is solved incorrectly.
-
+	
+	![Line Detection and Character Prediction](project_images/LineDetectionAndPrediction.jpg) 
 	![Evaluation](project_images/evaluation.jpg) 
 	
  **Conclusion :**
